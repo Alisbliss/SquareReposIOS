@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F8E458352EFB38D600B591D9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F8E458342EFB38D600B591D9 /* SnapKit */; };
+		F8E4583A2EFB38EE00B591D9 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = F8E458392EFB38EE00B591D9 /* SkeletonView */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F8E457AE2EFB066800B591D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -53,11 +58,6 @@
 			path = SquareReposiOSTests;
 			sourceTree = "<group>";
 		};
-		F8E457BA2EFB066800B591D9 /* SquareReposiOSUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SquareReposiOSUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E458352EFB38D600B591D9 /* SnapKit in Frameworks */,
+				F8E4583A2EFB38EE00B591D9 /* SkeletonView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +92,6 @@
 			children = (
 				F8E457992EFB065C00B591D9 /* SquareReposiOS */,
 				F8E457B02EFB066800B591D9 /* SquareReposiOSTests */,
-				F8E457BA2EFB066800B591D9 /* SquareReposiOSUITests */,
 				F8E457982EFB065C00B591D9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +126,8 @@
 			);
 			name = SquareReposiOS;
 			packageProductDependencies = (
+				F8E458342EFB38D600B591D9 /* SnapKit */,
+				F8E458392EFB38EE00B591D9 /* SkeletonView */,
 			);
 			productName = SquareReposiOS;
 			productReference = F8E457972EFB065C00B591D9 /* SquareReposiOS.app */;
@@ -166,9 +169,6 @@
 			dependencies = (
 				F8E457B92EFB066800B591D9 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				F8E457BA2EFB066800B591D9 /* SquareReposiOSUITests */,
-			);
 			name = SquareReposiOSUITests;
 			packageProductDependencies = (
 			);
@@ -208,6 +208,10 @@
 			);
 			mainGroup = F8E4578E2EFB065C00B591D9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F8E458332EFB38D600B591D9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F8E458382EFB38EE00B591D9 /* XCRemoteSwiftPackageReference "SkeletonView" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F8E457982EFB065C00B591D9 /* Products */;
 			projectDirPath = "";
@@ -583,6 +587,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8E458332EFB38D600B591D9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		F8E458382EFB38EE00B591D9 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.31.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8E458342EFB38D600B591D9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8E458332EFB38D600B591D9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		F8E458392EFB38EE00B591D9 /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8E458382EFB38EE00B591D9 /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F8E4578F2EFB065C00B591D9 /* Project object */;
 }
