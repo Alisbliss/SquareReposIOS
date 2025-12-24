@@ -13,4 +13,8 @@ If the data fails to load, the app displayes alert when data cannot be loaded.
 
 In the app imlemented Unit tests for GitHubService with replaycing networking layer with MockUrlProtocol. 
 
-![Loaded Screen](Snapshot/SquareRepos1.png) ![Loading Screen](Snapshot/SquareRepos2.png) ![Error Screen](Snapshot/SquareRepos3.png)
+<p align="center">
+<img src="Snapshot/SquareRepos1.png" alt="Loaded Screen" width="300"/>
+<img src="Snapshot/SquareRepos2.png" alt="Loading Screen" width="300"/>
+<img src="Snapshot/SquareRepos3.png" alt="Error Screen" width="300"/>
+</p>
