@@ -11,7 +11,7 @@ The app uses a custom RepoTableViewCell which created programmatically with Snap
 While data is being fetched from GitHub, the app shows animated skeleton placeholders using SkeletonView from package, this impoves user experience by indicationg that content is loading instead of showing an empty screen.
 If the data fails to load, the app displayes alert when data cannot be loaded.
 
-In the app imlemented Unit tests for GitHubService with replaycing networking layer with MockUrlProtocol. 
+The app includes unit tests for GitHubService, where the networking layer is replaced with a custom MockURLProtocol. This approach allows simulating different scenarios (successful response, network error, decoding failure) without making real API calls, ensuring reliable and isolated test coverage.
 
 <p align="center">
 <img src="Snapshot/SquareRepos1.png" alt="Loaded Screen" width="300"/>
